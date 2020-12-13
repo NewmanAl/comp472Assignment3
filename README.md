@@ -10,11 +10,14 @@ generateDiagrams.py is a utility script to create the diagrams used for the assi
 ```
 python generateDiagrams.py
 ```
-generateDiagrams assumes that the working directory contains the output of both NB-BOW models and output for four different runs of the LSTM model. From the working directory, generateDiagram assumes the following file structure.
+generateDiagrams assumes that the working directory contains the output of both NB-BOW models and output for four different runs of the LSTM model. It also assumes that it in the same directory as main.py. From the working directory, generateDiagram assumes the following file structure.
 ```
 .
+├── covid_test_public.tsv
+├── covid_training.tsv
 ├── eval_NB-BOW-OV.txt
 ├── eval_NB-BOW-OV.txt
+├── main.py
 ├── run1
 │   └── eval_lstm.txt
 ├── run2
